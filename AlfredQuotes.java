@@ -21,5 +21,4 @@ public class AlfredQuotes {
             return "At your service. As you wish, naturally.";
         }else return "Right. And with that I shall retire.";
     }
-    
 }

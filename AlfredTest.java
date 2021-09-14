@@ -2,8 +2,8 @@ public class AlfredTest {
     public static void main(String[] args) {
         // make instance of AlfredQuotes to access all it's methods
         AlfredQuotes alfredBot = new AlfredQuotes();
-        
-        /*String testBasicGreeting = alfredBot.basicGreeting();
+
+        String testBasicGreeting = alfredBot.basicGreeting();
         System.out.println(testBasicGreeting);
 
         System.out.println("");
@@ -17,7 +17,7 @@ public class AlfredTest {
         System.out.println(testDateAnnouncement);
     
         System.out.println("");
-        */
+        
         String testrespondBeforeAlexis = alfredBot.respondBeforeAlexis("Hello Alfred, Can you order me some new shoes?");
         System.out.println(testrespondBeforeAlexis);
     
@@ -30,5 +30,6 @@ public class AlfredTest {
 
         String testrespondBeforeAlexis3 = alfredBot.respondBeforeAlexis("Hey Robert, Can you help me?");
         System.out.println(testrespondBeforeAlexis3);
+    
     }
 }
