@@ -1,35 +1,45 @@
 import java.util.Arrays;
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
 public class ArrayPractice {
     public static void main(String[] args) {
         Random rand = new Random();
-        ArrayList<Integer> myArray1 = new ArrayList<Integer>();
-        //ArrayList<Object> List = new ArrayList<>();
+        
+        ArrayList<Integer> myArray2 = new ArrayList<Integer>();
+        ArrayList<Object> List = new ArrayList<>();
         ArrayList<String> dynamicArray = new ArrayList<>();
+        int[] myArray = new int [5];
+
         dynamicArray.add("Hello");
         dynamicArray.add("world");
         dynamicArray.add("etc");
         
-        int[] myArray = new int [5];
+        List.add("String");
+        List.add(10);
+        List.add(true);
+        List.add(11.5);
+        
         for (int i = 0; i < 5; i++){
-            int count = i +1;
-
+            //int count = i +1;
             myArray[i] = rand.nextInt(500);
-            myArray1.add(rand.nextInt(100));
-            System.out.println("Iteration :" + count );
-            System.out.println(Arrays.toString(myArray));
-            System.out.println(myArray1);
+            myArray2.add(rand.nextInt(100));
+            //System.out.println("In loop iteration :" + count );
+            //System.out.println(Arrays.toString(myArray));
+            //System.out.println(myArray2);
+        }
+        for (String item : dynamicArray){  // loop for collections 
+            List.add(item);
         }
 
+        
         System.out.println("**********************");
-        System.out.println(Arrays.toString(myArray));
-        System.out.println(myArray1);
+        System.out.println("Output:");
+        System.out.println("Fixed Array :" + Arrays.toString(myArray));
+        System.out.println("Unfixed Array2 : " + myArray2);
+        System.out.println("dynamicArray : " + dynamicArray);
+        System.out.println("Object Array 'unfixed' : " + List);
 
-        for (int i = 0; i <dynamicArray.size(); i++) {
-            System.out.println(dynamicArray.get(i));
-        }
-        System.out.println(dynamicArray);
     }
 }
 /*
