@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 public class JavaBasics {
 
     //print numbers method
@@ -146,5 +145,20 @@ public class JavaBasics {
         System.out.println(minMaxAvgArray);
         
         return minMaxAvgArray;
+    }
+
+    // shift given array one position to the front
+    //{-1,2,14,5,3,15,-20};
+    public ArrayList<Integer> shiftValueToFront(int [] array){
+        ArrayList<Integer> newArrayList = new ArrayList<Integer>();
+        
+        for(int i = 1 ; i < array.length; i++){
+            newArrayList.add(array[i]);
+        }
+        
+        newArrayList.add(0);
+        System.out.println(newArrayList);
+
+        return newArrayList;
     }
 }
