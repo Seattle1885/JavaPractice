@@ -1,7 +1,7 @@
 public class JavaBasicTest {
     public static void main(String[] args) {
-        JavaBasics javaBasicsMethods = new JavaBasics();
-        int [] intArray = {1,3,5,7};
+        //JavaBasics javaBasicsMethods = new JavaBasics();
+        //int [] intArray = {1,3,5,7};
         //int [] intArray2 = {-1,2,14,5,3,15,-20};
         //int [] intArray3 = {-1,-2,0,-5,-3,-15};
         //javaBasicsMethods.printNumbers(255);

@@ -10,9 +10,13 @@ public class ArrayPractice {
         ArrayList<String> dynamicArray = new ArrayList<>();
         int[] myArray = new int [5];
 
+       
         dynamicArray.add("Hello");
         dynamicArray.add("world");
         dynamicArray.add("etc");
+        // String stringArrayJoined = String.join("", stringArray);
+        // Output: Helloworldetc
+        // Output: Hello world etc <---String.join(" ", stringArray);
         
         List.add("String");
         List.add(10);
@@ -30,7 +34,6 @@ public class ArrayPractice {
         for (String item : dynamicArray){  // loop for collections 
             List.add(item);
         }
-
         
         System.out.println("**********************");
         System.out.println("Output:");
